@@ -1,0 +1,21 @@
+version: 2
+
+seeds:
+  - name: customer_segments
+
+    description: Customer revenue segmentation rules.
+
+    columns:
+      - name: segment
+        tests:
+          - not_null
+
+  - name: countries
+
+    description: Country lookup table.
+
+    columns:
+      - name: country_code
+        tests:
+          - unique
+          - not_null

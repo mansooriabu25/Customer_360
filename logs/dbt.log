@@ -1,0 +1,179 @@
+[0m18:10:12.400214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E4D95CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E746F730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E746F550>]}
+
+
+============================== 18:10:12.403912 | 30237359-6676-4498-a7d5-0e4507afbcb3 ==============================
+[0m18:10:12.403912 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:10:12.403912 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init customer360', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m18:10:12.481618 [debug] [MainThread]: Starter project path: C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\venv\lib\site-packages\dbt\include\starter_project
+[0m18:10:12.571064 [info ] [MainThread]: Setting up your profile.
+[0m18:10:24.455937 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:10:24.457953 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:10:24.457953 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:13:49.433991 [info ] [MainThread]: Profile customer360 written to C:\Users\AbuUzer-TEBillion\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:13:49.454706 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:13:49.457547 [info ] [MainThread]: dbt version: 1.12.0
+[0m18:13:49.458546 [info ] [MainThread]: python version: 3.10.10
+[0m18:13:49.459547 [info ] [MainThread]: python path: C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\venv\Scripts\python.exe
+[0m18:13:49.460549 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:13:49.573279 [info ] [MainThread]: Using profiles dir at C:\Users\AbuUzer-TEBillion\.dbt
+[0m18:13:49.574274 [info ] [MainThread]: Using profiles.yml file at C:\Users\AbuUzer-TEBillion\.dbt\profiles.yml
+[0m18:13:49.575300 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\customer360\dbt_project.yml
+[0m18:13:49.578301 [info ] [MainThread]: adapter type: snowflake
+[0m18:13:49.579300 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:13:49.731911 [info ] [MainThread]: Configuration:
+[0m18:13:49.731911 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:13:49.731911 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:13:49.731911 [info ] [MainThread]: Required dependencies:
+[0m18:13:49.731911 [debug] [MainThread]: Executing "git --help"
+[0m18:13:49.866039 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:13:49.866039 [debug] [MainThread]: STDERR: "b''"
+[0m18:13:49.866039 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:13:49.866039 [info ] [MainThread]: Connection:
+[0m18:13:49.882920 [info ] [MainThread]:   account: CIWGNBF-BB42111
+[0m18:13:49.883930 [info ] [MainThread]:   user: DBT_USER
+[0m18:13:49.884930 [info ] [MainThread]:   database: CUSTOMER360
+[0m18:13:49.885964 [info ] [MainThread]:   warehouse: CUSTOMER360_WH
+[0m18:13:49.887931 [info ] [MainThread]:   role: CUSTOMER360_ROLE
+[0m18:13:49.888927 [info ] [MainThread]:   schema: STAGING
+[0m18:13:49.889930 [info ] [MainThread]:   authenticator: None
+[0m18:13:49.889930 [info ] [MainThread]:   oauth_client_id: None
+[0m18:13:49.890928 [info ] [MainThread]:   query_tag: None
+[0m18:13:49.891953 [info ] [MainThread]:   client_session_keep_alive: False
+[0m18:13:49.893934 [info ] [MainThread]:   host: None
+[0m18:13:49.894947 [info ] [MainThread]:   port: None
+[0m18:13:49.895937 [info ] [MainThread]:   proxy_host: None
+[0m18:13:49.896980 [info ] [MainThread]:   proxy_port: None
+[0m18:13:49.898953 [info ] [MainThread]:   protocol: None
+[0m18:13:49.901307 [info ] [MainThread]:   connect_retries: 1
+[0m18:13:49.903156 [info ] [MainThread]:   connect_timeout: None
+[0m18:13:49.904250 [info ] [MainThread]:   retry_on_database_errors: False
+[0m18:13:49.906237 [info ] [MainThread]:   retry_all: False
+[0m18:13:49.906623 [info ] [MainThread]:   insecure_mode: False
+[0m18:13:49.908633 [info ] [MainThread]:   reuse_connections: True
+[0m18:13:49.909758 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m18:13:49.911264 [info ] [MainThread]:   workload_identity_provider: None
+[0m18:13:49.912283 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m18:13:49.912283 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m18:13:49.912283 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m18:13:50.983921 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m18:13:50.983921 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:13:51.000209 [debug] [MainThread]: On debug: select 1 as id
+[0m18:13:51.000636 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:13:51.864363 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.864 seconds
+[0m18:13:51.864363 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:13:51.864363 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:13:51.864363 [info ] [MainThread]: Your new dbt project "customer360" was created!
+Initialized new project in C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\customer360\customer360
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:13:51.864363 [debug] [MainThread]: Command `dbt init` succeeded at 18:13:51.864363 after 219.68 seconds
+[0m18:13:51.864363 [debug] [MainThread]: Connection 'debug' was left open.
+[0m18:13:51.864363 [debug] [MainThread]: On debug: Close
+[0m18:13:51.950921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E4D95CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E746F460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197E736A2F0>]}
+[0m18:13:51.950921 [debug] [MainThread]: Flushing usage events
+[0m18:13:52.817847 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:14:39.050914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCC7405C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCC8B17730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCC8B17550>]}
+
+
+============================== 18:14:39.058493 | d710c07c-06c1-47c2-b350-57fda1abe5ae ==============================
+[0m18:14:39.058493 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:14:39.060501 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m18:14:39.127439 [info ] [MainThread]: dbt version: 1.12.0
+[0m18:14:39.128437 [info ] [MainThread]: python version: 3.10.10
+[0m18:14:39.130403 [info ] [MainThread]: python path: C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\venv\Scripts\python.exe
+[0m18:14:39.131402 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:14:40.385932 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:14:40.387944 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:14:40.387944 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:14:41.600121 [info ] [MainThread]: Using profiles dir at C:\Users\AbuUzer-TEBillion\.dbt
+[0m18:14:41.602830 [info ] [MainThread]: Using profiles.yml file at C:\Users\AbuUzer-TEBillion\.dbt\profiles.yml
+[0m18:14:41.604841 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\dbt_project.yml
+[0m18:14:41.606855 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:14:41.609987 [debug] [MainThread]: Command `dbt debug` failed at 18:14:41.609987 after 2.76 seconds
+[0m18:14:41.612144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCC7405C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCC8AD7070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCCAD8F820>]}
+[0m18:14:41.614244 [debug] [MainThread]: Flushing usage events
+[0m18:14:42.567719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:46:34.859307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013265AC9CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132671D3730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132671D3550>]}
+
+
+============================== 09:46:34.883154 | 7c4e959e-bf8d-4a7f-a703-3778288cc154 ==============================
+[0m09:46:34.883154 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:46:34.887177 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m09:46:35.012383 [info ] [MainThread]: dbt version: 1.12.0
+[0m09:46:35.014398 [info ] [MainThread]: python version: 3.10.10
+[0m09:46:35.014398 [info ] [MainThread]: python path: C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\venv\Scripts\python.exe
+[0m09:46:35.014398 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m09:46:37.006756 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:46:37.013091 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:46:37.013091 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:46:38.230409 [info ] [MainThread]: Using profiles dir at C:\Users\AbuUzer-TEBillion\.dbt
+[0m09:46:38.230409 [info ] [MainThread]: Using profiles.yml file at C:\Users\AbuUzer-TEBillion\.dbt\profiles.yml
+[0m09:46:38.230409 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\dbt_project.yml
+[0m09:46:38.237850 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m09:46:38.246218 [debug] [MainThread]: Command `dbt debug` failed at 09:46:38.246218 after 3.68 seconds
+[0m09:46:38.249461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013265AC9CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000132671D3820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013269012A10>]}
+[0m09:46:38.253463 [debug] [MainThread]: Flushing usage events
+[0m09:46:39.411058 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:54:59.407978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152337A5CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015235EDCC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015235EDCA90>]}
+
+
+============================== 09:54:59.517345 | cdf09f84-b219-437e-880b-14dc75be480c ==============================
+[0m09:54:59.517345 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:54:59.520653 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select stg_customers', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:54:59.520653 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:54:59.520653 [debug] [MainThread]: Command `dbt run` failed at 09:54:59.520653 after 0.79 seconds
+[0m09:54:59.520653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152337A5CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015235EDCD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015235EDCD30>]}
+[0m09:54:59.527342 [debug] [MainThread]: Flushing usage events
+[0m09:55:01.971437 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:58.338509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBCC45D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBF2DC070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBF2DDAE0>]}
+
+
+============================== 09:56:58.361444 | 82c93f88-2bb5-4268-8997-6e6fa7549df5 ==============================
+[0m09:56:58.361444 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:56:58.370398 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_customers', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:56:58.370398 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:56:58.370398 [debug] [MainThread]: Command `dbt run` failed at 09:56:58.370398 after 0.28 seconds
+[0m09:56:58.370398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBCC45D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBF2DD270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FBF2DC070>]}
+[0m09:56:58.370398 [debug] [MainThread]: Flushing usage events
+[0m09:56:59.476429 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:04.164167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B962A25CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B964188D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B964188B50>]}
+
+
+============================== 15:27:04.180017 | f43f5de1-a47d-4d9b-b592-5a02ed187247 ==============================
+[0m15:27:04.180017 [info ] [MainThread]: Running with dbt=1.12.0
+[0m15:27:04.180017 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AbuUzer-TEBillion\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m15:27:04.180017 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\AbuUzer-TEBillion\OneDrive - TEBillion\Documents\Major Projects\dbt final project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:27:04.180017 [debug] [MainThread]: Command `dbt test` failed at 15:27:04.180017 after 0.26 seconds
+[0m15:27:04.191509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B962A25CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B964188E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B964188DF0>]}
+[0m15:27:04.194034 [debug] [MainThread]: Flushing usage events
+[0m15:27:05.237950 [debug] [MainThread]: An error was encountered while trying to flush usage events

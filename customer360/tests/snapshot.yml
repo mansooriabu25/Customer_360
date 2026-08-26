@@ -1,0 +1,18 @@
+version: 2
+
+snapshots:
+  - name: customer_snapshot
+    description: "Historical tracking of customer attribute changes."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: product_price_snapshot
+    description: "Tracks historical product pricing changes."
+
+  - name: customer_tier_snapshot
+    description: "Tracks customer movement between Bronze, Silver, and Gold tiers."
+
+  - name: account_snapshot
+    description: "Tracks account status and type changes."

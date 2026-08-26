@@ -1,0 +1,4 @@
+segment,min_revenue,max_revenue
+Bronze,0,4999
+Silver,5000,19999
+Gold,20000,999999999

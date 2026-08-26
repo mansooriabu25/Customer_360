@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: CUSTOMER360
+    schema: RAW
+
+    tables:
+      - name: customers
+      - name: products
+      - name: orders
+      - name: order_items
+      - name: leads
+      - name: website_sessions
+      - name: facebook_campaigns
