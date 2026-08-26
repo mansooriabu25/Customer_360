@@ -1,10 +1,15 @@
+# dbt
 
 target/
+
 dbt_packages/
+
 logs/
+
+
+# Environment
+
 .env
-venv/
-# Python virtual environments
 
 venv/
 
@@ -15,7 +20,7 @@ env/
 ENV/
 
 
-# Python cache files
+# Python
 
 __pycache__/
 
@@ -24,21 +29,33 @@ __pycache__/
 *$py.class
 
 
-# Environment variables
-
-.env
-
-
-# IDE files
+# IDE
 
 .vscode/
 
 .idea/
 
 
-# OS files
+# OS
 
 .DS_Store
 
 Thumbs.db
- 
+
+
+# Jupyter
+
+.ipynb_checkpoints
+
+
+# Testing & Cache
+
+.pytest_cache/
+
+.mypy_cache/
+
+.ruff_cache/
+
+.coverage
+
+htmlcov/
